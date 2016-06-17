@@ -25,7 +25,6 @@ int main()
 			else if (line[0] == '#')
 			{
 				string code = line.substr(1, line.length() - 1);
-
 				string::const_iterator it = code.begin();
 				while (it != code.end() && isdigit(*it)) ++it;
 				if (!code.empty() && it == code.end()) {
